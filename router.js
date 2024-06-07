@@ -9,7 +9,6 @@ router.post('/spareparts', controllerSparepart.create);
 router.get('/spareparts/:id', controllerSparepart.findById);
 router.put('/spareparts/:id', controllerSparepart.update);
 router.delete('/spareparts/:id', controllerSparepart.delete);
-router.get('/spareparts/name/:name', controllerSparepart.findByName);
 
 // Rute untuk motor
 router.get('/motors', controllerMotor.findAll);

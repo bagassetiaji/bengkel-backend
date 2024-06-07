@@ -1,5 +1,13 @@
-runtime: nodejs12
+runtime: nodejs20
+service: backend
 
-handlers:
-  - url: /.*
-    script: auto
+env_variables:
+  NODE_ENV: 'production'
+  DB_HOST: '34.101.58.213'
+  DB_USER: 'root'
+  DB_PASS: ''
+  DB_NAME: 'bengkel'
+  DB_CONNECTION_NAME: 'kelompok-06:asia-southeast2:db-bengkel'
+
+beta_settings:
+  cloud_sql_instances: 'kelompok-06:asia-southeast2:db-bengkel'

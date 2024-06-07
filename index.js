@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const PORT = 5000;  // Pastikan port ini sesuai dengan yang Anda gunakan
+const PORT = 8080;
 
 const app = express();
 
